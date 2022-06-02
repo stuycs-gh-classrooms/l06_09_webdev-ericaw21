@@ -12,7 +12,7 @@ function draw() {
     drawStrand("tcgcagctcg", 0, 0, 50);
 }
 
-function drawBase base,  x,  y,  sz){
+function drawBase(base,  x,  y,  sz){
   textSize(sz);
   noStroke();
   if (base == 't') {
