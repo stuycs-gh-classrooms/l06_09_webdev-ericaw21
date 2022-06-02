@@ -37,4 +37,4 @@ function drawStrand( dna,  x,  y,  sz){
     xCor += sz;
   }
  }
-)
+}
