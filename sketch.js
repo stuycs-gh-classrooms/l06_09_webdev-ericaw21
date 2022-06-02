@@ -3,11 +3,13 @@ function setup() {
    createCanvas(800, 800);
   background(0);
   
-  drawStrand("tcgcagctcg", 0, 0, 50);
+    drawStrand("tcgcagctcg", 0, 0, 50);
+
 }
 
 function draw() {
   // put drawing code here
+    drawStrand("tcgcagctcg", 0, 0, 50);
 }
 
 function drawBase(var base, var x, var y, var sz){
