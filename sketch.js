@@ -32,7 +32,7 @@ function drawBase(base,  x,  y,  sz){
 function drawStrand( dna,  x,  y,  sz){
   var xCor = x;
   var yCor = y;
-  for(var i = 0; i < dna.length(); i ++){
+  for(var i = 0; i < dna.length; i ++){
     drawBase(dna.charAt(i), xCor, yCor, sz);
     xCor += sz;
   }
