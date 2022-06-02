@@ -36,5 +36,4 @@ function drawStrand( dna,  x,  y,  sz){
     drawBase(dna.charAt(i), xCor, yCor, sz);
     xCor += sz;
   }
- }
 }
