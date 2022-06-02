@@ -19,11 +19,11 @@ function drawBase(base,  x,  y,  sz){
   if (base == 't') {
     fill(color('#F00'));
   } else if (base == 'a') {
-    stroke(color('#0F0'));
+    fill(color('#0F0'));
   } else if (base == 'c') {
-    stroke(color('#00F'));
+    fill(color('#00F'));
   } else if (base == 'g') {
-    stroke(color('#F0F'));
+    fill(color('#F0F'));
   }
   square(x, y, sz);
   fill(color(255));
