@@ -16,13 +16,13 @@ function drawBase(base,  x,  y,  sz){
   textSize(sz);
   noStroke();
   if (base == 't') {
-    stroke(#FF0000);
+    stroke(#F00);
   } else if (base == 'a') {
-    stroke(#00FF00);
+    stroke(#0F0);
   } else if (base == 'c') {
-    stroke(#0000FF);
+    stroke(#00F);
   } else if (base == 'g') {
-    stroke(#FF00FF);
+    stroke(#F0F);
   }
   square(x, y, sz);
   fill(255);
