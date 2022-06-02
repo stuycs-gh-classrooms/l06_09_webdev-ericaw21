@@ -12,7 +12,7 @@ function draw() {
     drawStrand("tcgcagctcg", 0, 0, 50);
 }
 
-function drawBase(var base, var x, var y, var sz){
+function drawBase base,  x,  y,  sz){
   textSize(sz);
   noStroke();
   if (base == 't') {
@@ -29,7 +29,7 @@ function drawBase(var base, var x, var y, var sz){
   text(base, x, y);
 }
 
-function drawStrand(var dna, var x, var y, var sz){
+function drawStrand( dna,  x,  y,  sz){
   var xCor = x;
   var yCor = y;
   for(int i = 0; i < dna.length(); i ++){
