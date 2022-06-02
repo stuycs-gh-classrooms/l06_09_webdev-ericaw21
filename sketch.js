@@ -1,36 +1,38 @@
 function setup() {
   // put setup code here
-  createCanvas(100,100);
-background(#E0F0FF);
+   createCanvas(800, 800);
+  background(0);
 
-
-var moveX, moveY;
-moveX = 0; //positive int to move right, negative int to move left
-moveY = 0; //positive int to move down, negative int to move up
-
-beginShape(TRIANGLE_FAN);
-fill(#0000CF);
-vertex(50 + moveX, 60 + moveY);
-vertex(50 + moveX, 40 + moveY); 
-vertex(75 + moveX, 60 + moveY); 
-fill(#0069EE);
-vertex(50 + moveX, 80 + moveY); 
-fill(#0083EA);
-vertex(25 + moveX, 60 + moveY); 
-fill(#009BD4);
-vertex(50 + moveX, 40 + moveY); 
-endShape();
-
-fill(#00B0B4);
-triangle(50 + moveX,40 + moveY,25 + moveX,60 + moveY,5 + moveX,40 + moveY);
-fill(#00C492);
-triangle(50 + moveX,40 + moveY,5 + moveX,40 + moveY,25 + moveX,20 + moveY);
-fill(#009E60);
-triangle(50 + moveX,40 + moveY,75 + moveX,60 + moveY,95 + moveX,40 + moveY);
-fill(#17D574);
-triangle(50 + moveX,40 + moveY,95 + moveX,40 + moveY,75 + moveX,20 + moveY);
+  drawStrand("tcgcagctcg", 0, 0, 50);
 }
 
 function draw() {
   // put drawing code here
 }
+
+function drawBase(char base, int x, int y, int sz){
+  textSize(sz);
+  noStroke();
+  if (base == 't') {
+    fill(#FF0000);
+  } else if (base == 'a') {
+    fill(#00FF00);
+  } else if (base == 'c') {
+    fill(#0000FF);
+  } else if (base == 'g') {
+    fill(#FF00FF);
+  }
+  square(x, y, sz);
+  fill(255);
+  text(base, x, y);
+}
+
+function drawStrand(String dna, int x, int y, int sz){
+  int xCor = x;
+  int yCor = y;
+  for(int i = 0; i < dna.length(); i ++){
+    drawBase(dna.charAt(i), xCor, yCor, sz);
+    xCor += sz;
+  }
+ }
+)
