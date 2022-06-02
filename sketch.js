@@ -2,7 +2,7 @@ function setup() {
   // put setup code here
    createCanvas(800, 800);
   background(0);
-
+  
   drawStrand("tcgcagctcg", 0, 0, 50);
 }
 
@@ -10,7 +10,7 @@ function draw() {
   // put drawing code here
 }
 
-function drawBase(char base, int x, int y, int sz){
+function drawBase(var base, var x, var y, var sz){
   textSize(sz);
   noStroke();
   if (base == 't') {
@@ -27,9 +27,9 @@ function drawBase(char base, int x, int y, int sz){
   text(base, x, y);
 }
 
-function drawStrand(String dna, int x, int y, int sz){
-  int xCor = x;
-  int yCor = y;
+function drawStrand(var dna, var x, var y, var sz){
+  var xCor = x;
+  var yCor = y;
   for(int i = 0; i < dna.length(); i ++){
     drawBase(dna.charAt(i), xCor, yCor, sz);
     xCor += sz;
