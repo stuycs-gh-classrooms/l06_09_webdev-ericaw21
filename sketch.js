@@ -13,10 +13,11 @@ function draw() {
 }
 
 function drawBase(base,  x,  y,  sz){
+    textAlign(LEFT, TOP);
   textSize(sz);
   noStroke();
   if (base == 't') {
-    stroke(color('#F00'));
+    fill(color('#F00'));
   } else if (base == 'a') {
     stroke(color('#0F0'));
   } else if (base == 'c') {
