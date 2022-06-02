@@ -25,7 +25,7 @@ function drawBase(base,  x,  y,  sz){
     stroke(color('#F0F'));
   }
   square(x, y, sz);
-  fill(255);
+  fill(color(255));
   text(base, x, y);
 }
 
